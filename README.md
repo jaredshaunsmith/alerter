@@ -10,7 +10,7 @@ To install via npm:
 npm install alerter --save-dev
 ```
 
-Intercom:
+Alerter:
 ---------
 ```javascript
 
