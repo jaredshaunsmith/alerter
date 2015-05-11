@@ -1,0 +1,69 @@
+
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Intercom - Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type='text/javascript' src='alerter.js'></script>
+
+    <script type='text/javascript'>
+    $(document).ready(function() {
+      var a = new Alerter({
+        message: 'Big Time Important Message', 
+        prefix: 'my-class',
+        trigger: false
+      });
+
+      $('.trigger').on('click', function() {
+        a.show();
+      })
+    })
+    </script>
+    <style>
+      body { background-color: whitesmoke; font-family: Arial, Helvetica, Sans-Serif;}
+      
+      /** your base class should have hidden as default **/
+      .my-class {
+        display: none;
+      }
+      /** your active class **/
+      .my-class-active {
+        display: block;
+      }
+
+
+      /** extra styles for demo - not essential **/
+      .trigger {
+        margin: 200px auto;
+        background: #e32b68;
+        opacity: 0.6;
+        cursor: pointer;
+        text-align: center;
+        width: 20vw;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .my-class, .my-class-active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        text-align: center;
+        padding: 20px;
+        background: #42bcf7;
+      }
+      .alerter-close {
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="trigger">Click test</div>
+  </body>
+</html>

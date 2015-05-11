@@ -1,0 +1,15 @@
+{
+  "name": "alerter",
+  "version": "0.0.1",
+  "description": "General purpose system messages to frontend",
+  "main": "alerter.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaredshaunsmith/alerter.git"
+  },
+  "author": "jared s. smith",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jaredshaunsmith/alerter/issues"
+  }
+}
